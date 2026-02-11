@@ -1,0 +1,36 @@
+.section {
+    width: 100%;
+
+    padding: var(--spacing-10xl) 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6xl);
+}
+
+.headerWrapper {
+    width: 100%;
+    margin-bottom: var(--spacing-7xl);
+    padding: 0;
+}
+
+.cardsGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: var(--spacing-4xl);
+
+    box-sizing: border-box;
+}

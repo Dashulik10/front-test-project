@@ -1,0 +1,22 @@
+.primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 73px;
+    gap: 184px;
+
+    background-color: var(--color-background-primary);
+    font-weight: var(--font-weight-primary);
+}
+
+.logo {
+    align-self: center;
+    height: 68px;
+    width: 68px;
+
+    transition: transform var(--transition-base), opacity var(--transition-base);
+}
+.logo:hover {
+    transform: scale(1.08);
+    opacity: 0.85;
+}

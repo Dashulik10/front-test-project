@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-8xl);
+    gap: var(--spacing-9xl);
+    margin: 0;
+
+    background-color: var(--color-background-primary);
+}

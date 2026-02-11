@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 660px;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.title {
+    font-family: var(--font-main-primary);
+    font-weight: var(--font-weight-primary);
+    font-size: var(--font-size-3xl);
+    color: var(--color-brand-primary-900);
+    line-height: 1.1;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: var(--font-main-primary);
+    font-weight: var(--font-weight-primary);
+    font-size: var(--font-size-xl);
+    color: var(--color-brand-primary-700);
+    margin: 0;
+}
+
+.controlsBlock {
+    display: flex;
+    gap: var(--spacing-2xl);
+    padding-bottom: 5px;
+
+    align-self: center;
+}

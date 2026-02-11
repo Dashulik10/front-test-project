@@ -1,0 +1,245 @@
+.heroWrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1440px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+
+.planeLayer {
+    z-index: 50;
+    pointer-events: none;
+    position: absolute;
+
+    top: 63px;
+    left: 503px;
+    width: 1400px;
+    height: 821px;
+}
+.planeLayer img {
+    height: 100%;
+    width: auto;
+}
+
+
+.blocksContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+
+    z-index: 0;
+}
+
+
+.bgLayer {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    left: -270px;
+    top: -430px;
+    width: 1710px;
+    height: 1142px;
+}
+.bgLayer img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+
+
+.skyCard {
+    z-index: 1;
+    position: relative;
+    height: auto;
+    width: 100%;
+    min-height: 552px;
+    padding: var(--spacing-7xl) var(--spacing-8xl);
+    box-sizing: border-box;
+    border-radius: var(--radius-xl);
+}
+.skyCard::before {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    height: var(--radius-xl);
+    width: var(--radius-xl);
+
+    background: radial-gradient(
+        circle at 0 0,
+        transparent 60px,
+        var(--color-background-primary) 61px
+    );
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.contentLayer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: var(--spacing-5xl);
+
+    padding: var(--spacing-7xl) var(--spacing-3xl);
+    max-height: 500px;
+}
+.rightBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-3xl);
+    max-width: 490px;
+}
+.buttonsSubBlock {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+}
+
+
+.stageRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -1px;
+}
+
+
+.leftPreLastStage {
+    height: 84px;
+    width: 1000px;
+    background-color: transparent;
+    flex-shrink: 0;
+    margin-left: 15px;
+    display: flex;
+}
+.leftLastStage {
+    height: 118px;
+    width: 862px;
+    background-color: transparent;
+    flex-shrink: 0;
+    margin-left: 15px;
+    display: flex;
+}
+
+
+.rightFiller {
+    position: relative;
+
+    flex: 1;
+    background-color: var(--color-background-primary);
+    display: flex;
+    justify-content: flex-end;
+
+    border-top-left-radius: var(--radius-xl);
+
+    z-index: 1;
+}
+.bottomFiller::before {
+    content: "";
+    left: -60px;
+    bottom: 0;
+
+    height: 62px;
+    width: 62px;
+
+    background: radial-gradient(
+        circle at 0 0,
+        transparent 60px,
+        var(--color-background-primary) 61px
+    );
+
+    pointer-events: none;
+    position: absolute;
+
+}
+.preBottomFiller::before {
+    content: "";
+    left: -57px;
+    bottom: 0;
+
+    height: 61px;
+    width: 61px;
+
+    background: radial-gradient(
+        circle at 0 0,
+        transparent 60px,
+        var(--color-background-primary) 61px
+    );
+
+    pointer-events: none;
+    position: absolute;
+}
+
+
+.rightPreLastStage {
+    height: 85px;
+    width: 243px;
+
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+
+    background: var(--color-brand-primary-100);
+    align-self: flex-end;
+    position: relative;
+    z-index: 2;
+    margin-top: var(--spacing-md);
+    margin-left: var(--spacing-md);
+}
+
+
+.rightLastStage {
+    position: relative;
+    height: 118px;
+    width: 380px;
+
+    background: linear-gradient(180deg, #F3EFDF 0%, #EAE6D6 25%, #8D8B81 100%);
+
+    border-top-left-radius: var(--radius-xl);
+    border-bottom-left-radius: var(--radius-xl);
+
+    z-index: 2;
+
+    padding: var(--spacing-2xl) var(--spacing-4xl);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-left: var(--spacing-md);
+}
+.rightLastStage::before {
+    content: "";
+    position: absolute;
+
+    top: -60px;
+    left: 80px;
+
+    height: var(--radius-xl);
+    width: var(--radius-xl);
+
+    background: radial-gradient(
+        circle at 0 0,
+        transparent 60px,
+         var(--color-brand-primary-100) 61px
+    );
+
+    pointer-events: none;
+    z-index: 2;
+}

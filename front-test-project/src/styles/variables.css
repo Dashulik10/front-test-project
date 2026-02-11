@@ -1,0 +1,58 @@
+/* 'primary' | 'secondary' | 'tertiary' | 'danger' | 'warning' | 'success' | 'error' */
+
+:root {
+    --color-brand-primary-900: #182e44;
+    --color-brand-primary-700: #4E6D7D;
+    --color-brand-primary-500: #8E9E83;
+    --color-brand-primary-100: #F3EFDF;
+    --color-background-primary: #D3E0C4;
+    --color-accent-blue: #4384A4;
+
+
+    --radius-full: 999px;
+    --radius-xl: 60px;
+    --radius-lg: 50px;
+    --radius-md: 40px;
+    --radius-sm: 10px;
+
+
+    --font-main-primary: Goldman, sans-serif;
+    --font-weight-primary: bold;
+    --font-weight-medium: 500;
+    --font-weight-normal: normal;
+
+    --text-transform-up: uppercase;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 24px;
+    --font-size-3xl: 48px;
+    --font-size-extra: 64px;
+
+
+    --spacing-xs: 6px;
+    --spacing-sm: 8px;
+    --spacing-md: 10px;
+    --spacing-lg: 13px;
+    --spacing-xl: 15px;
+    --spacing-2xl: 20px;
+    --spacing-3xl: 25px;
+    --spacing-4xl: 30px;
+    --spacing-5xl: 42px;
+    --spacing-6xl: 50px;
+    --spacing-7xl: 60px;
+    --spacing-8xl: 80px;
+    --spacing-9xl: 84px;
+    --spacing-10xl: 100px;
+
+
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.25s ease;
+
+
+    --list-style-none: none;
+    --text-decoration-none: none;
+}
